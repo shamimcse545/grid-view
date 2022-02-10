@@ -1,0 +1,62 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.header{
+    background-color: yellow;
+    grid-column: 1/ -1;
+    grid-row: 1 / span 1;
+}
+.slidebar{
+    background-color: tomato;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 2;
+
+}
+.content{
+    background-color: violet;
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 2;
+
+}
+.footer{
+    background-color: cadetblue;
+    grid-column: 1 / span 4;
+    grid-row: 4 / span 1;
+}
+
+.header h1{
+    text-align: center;
+}
+.footer{
+    text-align: left;
+}
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 100px;
+}
+
+.slidebar h1{
+    font-family: cursive;
+}
+.item > li {
+    font-size: 30px;
+    font-family: cursive;
+
+
+}
+.content img{
+    width: 200px;
+    height: 150px;
+}
